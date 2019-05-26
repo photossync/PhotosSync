@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2718FD334D0460DB148003CD /* Pods_PhotosSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFE45E156F690889BA90925 /* Pods_PhotosSync.framework */; };
+		365DDF21229AFF17003085DF /* GTLRPhotosLibraryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 365DDF19229AFF17003085DF /* GTLRPhotosLibraryService.m */; };
+		365DDF22229AFF17003085DF /* GTLRPhotosLibraryQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 365DDF1A229AFF17003085DF /* GTLRPhotosLibraryQuery.m */; };
+		365DDF23229AFF17003085DF /* GTLRPhotosLibraryObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 365DDF1B229AFF17003085DF /* GTLRPhotosLibraryObjects.m */; };
+		365DDF24229AFF17003085DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 365DDF1C229AFF17003085DF /* README.md */; };
 		E1321E502229A71600046C00 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321E4F2229A71600046C00 /* StopWatch.swift */; };
 		E141B26F2297C42700577B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E141B26E2297C42700577B70 /* Assets.xcassets */; };
 		E141B2712297C56900577B70 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E141B2702297C56900577B70 /* StatusMenuController.swift */; };
@@ -48,6 +52,15 @@
 
 /* Begin PBXFileReference section */
 		1DFE45E156F690889BA90925 /* Pods_PhotosSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotosSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		365DDF19229AFF17003085DF /* GTLRPhotosLibraryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPhotosLibraryService.m; sourceTree = "<group>"; };
+		365DDF1A229AFF17003085DF /* GTLRPhotosLibraryQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPhotosLibraryQuery.m; sourceTree = "<group>"; };
+		365DDF1B229AFF17003085DF /* GTLRPhotosLibraryObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPhotosLibraryObjects.m; sourceTree = "<group>"; };
+		365DDF1C229AFF17003085DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		365DDF1D229AFF17003085DF /* GTLRPhotosLibraryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPhotosLibraryService.h; sourceTree = "<group>"; };
+		365DDF1E229AFF17003085DF /* GTLRPhotosLibraryQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPhotosLibraryQuery.h; sourceTree = "<group>"; };
+		365DDF1F229AFF17003085DF /* GTLRPhotosLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPhotosLibrary.h; sourceTree = "<group>"; };
+		365DDF20229AFF17003085DF /* GTLRPhotosLibraryObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPhotosLibraryObjects.h; sourceTree = "<group>"; };
+		365DDF25229AFF7D003085DF /* PhotosSync-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotosSync-Bridging-Header.h"; sourceTree = "<group>"; };
 		5812B619CFD2A34C755877DC /* Pods-PhotosSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSync.release.xcconfig"; path = "Target Support Files/Pods-PhotosSync/Pods-PhotosSync.release.xcconfig"; sourceTree = "<group>"; };
 		C56A4EA7FFD8D3C8797F304D /* Pods-PhotosSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSync.debug.xcconfig"; path = "Target Support Files/Pods-PhotosSync/Pods-PhotosSync.debug.xcconfig"; sourceTree = "<group>"; };
 		E1321E4F2229A71600046C00 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
@@ -112,13 +125,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		365DDF18229AFF17003085DF /* GTLRPhotosLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				365DDF19229AFF17003085DF /* GTLRPhotosLibraryService.m */,
+				365DDF1A229AFF17003085DF /* GTLRPhotosLibraryQuery.m */,
+				365DDF1B229AFF17003085DF /* GTLRPhotosLibraryObjects.m */,
+				365DDF1C229AFF17003085DF /* README.md */,
+				365DDF1D229AFF17003085DF /* GTLRPhotosLibraryService.h */,
+				365DDF1E229AFF17003085DF /* GTLRPhotosLibraryQuery.h */,
+				365DDF1F229AFF17003085DF /* GTLRPhotosLibrary.h */,
+				365DDF20229AFF17003085DF /* GTLRPhotosLibraryObjects.h */,
+			);
+			path = GTLRPhotosLibrary;
+			sourceTree = "<group>";
+		};
 		CB7E283E138C7028E16DE8CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C56A4EA7FFD8D3C8797F304D /* Pods-PhotosSync.debug.xcconfig */,
 				5812B619CFD2A34C755877DC /* Pods-PhotosSync.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +227,7 @@
 		E1E43AF4217CDABA000E76DF /* PhotosSync */ = {
 			isa = PBXGroup;
 			children = (
+				365DDF18229AFF17003085DF /* GTLRPhotosLibrary */,
 				E141B2722297C57300577B70 /* ui */,
 				E1E43B42217CE0A9000E76DF /* MainExporter.swift */,
 				E141B2762297CE8700577B70 /* preferences */,
@@ -207,6 +235,7 @@
 				E1E43B19217CDB8C000E76DF /* util */,
 				E1E43AFC217CDABA000E76DF /* Info.plist */,
 				E1E43B39217CDC73000E76DF /* PhotosSync.entitlements */,
+				365DDF25229AFF7D003085DF /* PhotosSync-Bridging-Header.h */,
 			);
 			path = PhotosSync;
 			sourceTree = "<group>";
@@ -341,6 +370,7 @@
 			files = (
 				E1E43B65217CE1A0000E76DF /* filesystem-structure.png in Resources */,
 				E141B26F2297C42700577B70 /* Assets.xcassets in Resources */,
+				365DDF24229AFF17003085DF /* README.md in Resources */,
 				E141B2AC2299ADB000577B70 /* LICENSE-swift-uniyaml in Resources */,
 				E1E43B63217CE16D000E76DF /* MainMenu.xib in Resources */,
 			);
@@ -420,16 +450,19 @@
 				E1E43B1D217CDBE9000E76DF /* SnapshotPhotosExporter.swift in Sources */,
 				E1B119262251DC8100B53693 /* Errors.swift in Sources */,
 				E1A55240222AB2EF00F72499 /* String+extensions.swift in Sources */,
+				365DDF22229AFF17003085DF /* GTLRPhotosLibraryQuery.m in Sources */,
 				E141B27E2297D24A00577B70 /* Encoder.swift in Sources */,
 				E141B2712297C56900577B70 /* StatusMenuController.swift in Sources */,
 				E141B2892297D4D000577B70 /* Preferences.swift in Sources */,
 				E141B2AA2299A89800577B70 /* PreferencesReader.swift in Sources */,
 				E1E43AF6217CDABA000E76DF /* AppDelegate.swift in Sources */,
+				365DDF21229AFF17003085DF /* GTLRPhotosLibraryService.m in Sources */,
 				E1E43B13217CDB54000E76DF /* MediaLibUtil.swift in Sources */,
 				E186D26022354098000BFCED /* FlatFolderDescriptor.swift in Sources */,
 				E141B2802297D24C00577B70 /* YAML.swift in Sources */,
 				E1E43B11217CDB54000E76DF /* IncrementalPhotosExporter.swift in Sources */,
 				E141B2872297D48A00577B70 /* GooglePhotosExportPlan.swift in Sources */,
+				365DDF23229AFF17003085DF /* GTLRPhotosLibraryObjects.m in Sources */,
 				E141B2822297D34300577B70 /* Plan.swift in Sources */,
 				E141B2842297D36900577B70 /* FIleSystemExportPlan.swift in Sources */,
 				E1E43B10217CDB54000E76DF /* MetadataLoader.swift in Sources */,
@@ -618,6 +651,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = photossync.PhotosSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotosSync/PhotosSync-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -636,6 +670,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = photossync.PhotosSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotosSync/PhotosSync-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
