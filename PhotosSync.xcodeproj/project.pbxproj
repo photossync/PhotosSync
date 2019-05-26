@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2718FD334D0460DB148003CD /* Pods_PhotosSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFE45E156F690889BA90925 /* Pods_PhotosSync.framework */; };
 		E1321E502229A71600046C00 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321E4F2229A71600046C00 /* StopWatch.swift */; };
 		E141B26F2297C42700577B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E141B26E2297C42700577B70 /* Assets.xcassets */; };
 		E141B2712297C56900577B70 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E141B2702297C56900577B70 /* StatusMenuController.swift */; };
@@ -46,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DFE45E156F690889BA90925 /* Pods_PhotosSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotosSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5812B619CFD2A34C755877DC /* Pods-PhotosSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSync.release.xcconfig"; path = "Target Support Files/Pods-PhotosSync/Pods-PhotosSync.release.xcconfig"; sourceTree = "<group>"; };
+		C56A4EA7FFD8D3C8797F304D /* Pods-PhotosSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSync.debug.xcconfig"; path = "Target Support Files/Pods-PhotosSync/Pods-PhotosSync.debug.xcconfig"; sourceTree = "<group>"; };
 		E1321E4F2229A71600046C00 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		E141B26E2297C42700577B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E141B2702297C56900577B70 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
@@ -93,12 +97,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2718FD334D0460DB148003CD /* Pods_PhotosSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174569104FA162C1CD4A5EB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DFE45E156F690889BA90925 /* Pods_PhotosSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB7E283E138C7028E16DE8CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C56A4EA7FFD8D3C8797F304D /* Pods-PhotosSync.debug.xcconfig */,
+				5812B619CFD2A34C755877DC /* Pods-PhotosSync.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E141B26B2297B97D00577B70 /* assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +183,8 @@
 				E1E43B3D217CDFED000E76DF /* doc */,
 				E141B2A02299A50800577B70 /* PreferencesReaderTest */,
 				E1E43AF3217CDABA000E76DF /* Products */,
+				CB7E283E138C7028E16DE8CF /* Pods */,
+				174569104FA162C1CD4A5EB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1E43B00217CDABA000E76DF /* Build configuration list for PBXNativeTarget "PhotosSync" */;
 			buildPhases = (
+				424A38F8AE6D9FAB260A9C52 /* [CP] Check Pods Manifest.lock */,
 				E1E43AEE217CDABA000E76DF /* Sources */,
 				E1E43AEF217CDABA000E76DF /* Frameworks */,
 				E1E43AF0217CDABA000E76DF /* Resources */,
+				8EA49A4A6559B88AC1282EA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +347,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		424A38F8AE6D9FAB260A9C52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotosSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA49A4A6559B88AC1282EA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotosSync/Pods-PhotosSync-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotosSync/Pods-PhotosSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E141B29B2299A50800577B70 /* Sources */ = {
@@ -526,6 +606,7 @@
 		};
 		E1E43B01217CDABA000E76DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56A4EA7FFD8D3C8797F304D /* Pods-PhotosSync.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +624,7 @@
 		};
 		E1E43B02217CDABA000E76DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5812B619CFD2A34C755877DC /* Pods-PhotosSync.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
