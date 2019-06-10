@@ -13,11 +13,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private let logger = Logger(loggerName: "AppDelegate", logLevel: .info)
 
+    @IBOutlet weak var statusMenuController: StatusMenuController!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let preferences = PreferencesReader.readPreferencesFile()
         logger.info("Read preferences file; content:\n\(preferences.toYaml())")
+        
+        statusMenuController.updateMenu(preferences: preferences)
 
-        for plan in preferences.plans {
+        /*for plan in preferences.plans {
             if plan.enabled {
                 logger.info("Start export using plan:\n\(plan.toYaml(indent: 10))")
                 do {
@@ -33,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         //PreferencesReader.writePreferencesFile(preferences: preferences)
 
-        NSApp.terminate(self)
+        NSApp.terminate(self)*/
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
