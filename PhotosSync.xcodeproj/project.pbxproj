@@ -25,6 +25,12 @@
 		E1A55240222AB2EF00F72499 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5523F222AB2EF00F72499 /* String+extensions.swift */; };
 		E1B119262251DC8100B53693 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B119252251DC8100B53693 /* Errors.swift */; };
 		E1CA31E222AE724100FF15D5 /* PhotosExporterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CA31E122AE724100FF15D5 /* PhotosExporterFactory.swift */; };
+		E1CA31EC22B02AD400FF15D5 /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CA31EA22B02AD400FF15D5 /* GeneralSettingsViewController.swift */; };
+		E1CA31ED22B02AD400FF15D5 /* GeneralSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA31EB22B02AD400FF15D5 /* GeneralSettingsView.xib */; };
+		E1CA31F022B02B2200FF15D5 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CA31EE22B02B2200FF15D5 /* PlansViewController.swift */; };
+		E1CA31F122B02B2200FF15D5 /* PlansView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA31EF22B02B2200FF15D5 /* PlansView.xib */; };
+		E1CA31F522B02B8100FF15D5 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CA31F322B02B8100FF15D5 /* PreferencesWindowController.swift */; };
+		E1CA31F622B02B8100FF15D5 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CA31F422B02B8100FF15D5 /* PreferencesWindow.xib */; };
 		E1E43AF6217CDABA000E76DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43AF5217CDABA000E76DF /* AppDelegate.swift */; };
 		E1E43B10217CDB54000E76DF /* MetadataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B08217CDB53000E76DF /* MetadataLoader.swift */; };
 		E1E43B11217CDB54000E76DF /* IncrementalPhotosExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B09217CDB53000E76DF /* IncrementalPhotosExporter.swift */; };
@@ -68,6 +74,12 @@
 		E1A5523F222AB2EF00F72499 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		E1B119252251DC8100B53693 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E1CA31E122AE724100FF15D5 /* PhotosExporterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosExporterFactory.swift; sourceTree = "<group>"; };
+		E1CA31EA22B02AD400FF15D5 /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
+		E1CA31EB22B02AD400FF15D5 /* GeneralSettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralSettingsView.xib; sourceTree = "<group>"; };
+		E1CA31EE22B02B2200FF15D5 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		E1CA31EF22B02B2200FF15D5 /* PlansView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlansView.xib; sourceTree = "<group>"; };
+		E1CA31F322B02B8100FF15D5 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		E1CA31F422B02B8100FF15D5 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		E1E43AF2217CDABA000E76DF /* PhotosSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E43AF5217CDABA000E76DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E43AFC217CDABA000E76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +127,7 @@
 				E1E43AF5217CDABA000E76DF /* AppDelegate.swift */,
 				E141B2702297C56900577B70 /* StatusMenuController.swift */,
 				E1E43B62217CE16D000E76DF /* MainMenu.xib */,
+				E1CA31E722AEDE7100FF15D5 /* preferences */,
 				E141B26B2297B97D00577B70 /* assets */,
 			);
 			path = ui;
@@ -151,6 +164,19 @@
 				E141B2A32299A50800577B70 /* Info.plist */,
 			);
 			path = PreferencesReaderTest;
+			sourceTree = "<group>";
+		};
+		E1CA31E722AEDE7100FF15D5 /* preferences */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA31F322B02B8100FF15D5 /* PreferencesWindowController.swift */,
+				E1CA31F422B02B8100FF15D5 /* PreferencesWindow.xib */,
+				E1CA31EA22B02AD400FF15D5 /* GeneralSettingsViewController.swift */,
+				E1CA31EB22B02AD400FF15D5 /* GeneralSettingsView.xib */,
+				E1CA31EE22B02B2200FF15D5 /* PlansViewController.swift */,
+				E1CA31EF22B02B2200FF15D5 /* PlansView.xib */,
+			);
+			path = preferences;
 			sourceTree = "<group>";
 		};
 		E1E43AE9217CDABA000E76DF = {
@@ -317,8 +343,11 @@
 			files = (
 				E1E43B65217CE1A0000E76DF /* filesystem-structure.png in Resources */,
 				E141B26F2297C42700577B70 /* Assets.xcassets in Resources */,
+				E1CA31F122B02B2200FF15D5 /* PlansView.xib in Resources */,
 				E141B2AC2299ADB000577B70 /* LICENSE-swift-uniyaml in Resources */,
 				E1E43B63217CE16D000E76DF /* MainMenu.xib in Resources */,
+				E1CA31F622B02B8100FF15D5 /* PreferencesWindow.xib in Resources */,
+				E1CA31ED22B02AD400FF15D5 /* GeneralSettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +368,11 @@
 			files = (
 				E1E43B1C217CDBE9000E76DF /* PhotosExporter.swift in Sources */,
 				E1321E502229A71600046C00 /* StopWatch.swift in Sources */,
+				E1CA31F022B02B2200FF15D5 /* PlansViewController.swift in Sources */,
 				E1E43B1D217CDBE9000E76DF /* SnapshotPhotosExporter.swift in Sources */,
 				E1B119262251DC8100B53693 /* Errors.swift in Sources */,
 				E1A55240222AB2EF00F72499 /* String+extensions.swift in Sources */,
+				E1CA31EC22B02AD400FF15D5 /* GeneralSettingsViewController.swift in Sources */,
 				E141B27E2297D24A00577B70 /* Encoder.swift in Sources */,
 				E141B2712297C56900577B70 /* StatusMenuController.swift in Sources */,
 				E141B2892297D4D000577B70 /* Preferences.swift in Sources */,
@@ -356,6 +387,7 @@
 				E141B2872297D48A00577B70 /* GooglePhotosExportPlan.swift in Sources */,
 				E141B2822297D34300577B70 /* Plan.swift in Sources */,
 				E141B2842297D36900577B70 /* FileSystemExportPlan.swift in Sources */,
+				E1CA31F522B02B8100FF15D5 /* PreferencesWindowController.swift in Sources */,
 				E1E43B10217CDB54000E76DF /* MetadataLoader.swift in Sources */,
 				E141B27C2297D24800577B70 /* Decoder.swift in Sources */,
 				E1E43B46217CE0C8000E76DF /* Logger.swift in Sources */,
